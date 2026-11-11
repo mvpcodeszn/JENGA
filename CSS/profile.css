@@ -1,0 +1,373 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f2;
+    color: #111;
+}
+
+.profile-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 240px;
+    background: #111;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.logo span {
+    color: #9db890;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar nav a,
+.logout {
+    text-decoration: none;
+    color: #bbb;
+    padding: 13px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #6c8f5d;
+    color: white;
+}
+
+.logout {
+    margin-top: auto;
+    color: #ff9999;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    flex: 1;
+    padding: 35px;
+    min-width: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.topbar h2 {
+    font-size: 24px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #6c8f5d;
+    font-weight: bold;
+}
+
+/* PROFILE HEADER */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    background: #dfe7d9;
+    color: #36502d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.investor-avatar {
+    background: #111;
+    color: white;
+}
+
+.role-label {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #6c8f5d;
+    margin-bottom: 10px;
+}
+
+.investor-label {
+    color: #111;
+}
+
+.profile-info h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.location {
+    font-size: 14px;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: #6c8f5d;
+    color: white;
+}
+
+.secondary-btn {
+    background: #eee;
+    color: #111;
+}
+
+/* PROFILE CARDS */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.profile-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.profile-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.about-card h3 {
+    margin-top: 25px;
+}
+
+/* TAGS */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.tags span,
+.tag {
+    display: inline-block;
+    background: #dfe7d9;
+    color: #36502d;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* BUSINESS / PORTFOLIO */
+
+.business-preview,
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.business-icon {
+    width: 50px;
+    height: 50px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #6c8f5d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* DETAILS */
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row span {
+    color: #777;
+}
+
+.detail-row strong {
+    text-align: right;
+}
+
+/* PITCH */
+
+.pitch-preview {
+    background: #f1f1eb;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.play-button {
+    width: 45px;
+    height: 45px;
+    background: #6c8f5d;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 190px;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar nav a {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .logout {
+        margin-top: 15px;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
+
+    .profile-info h1 {
+        font-size: 26px;
+    }
+
+    .profile-buttons {
+        flex-wrap: wrap;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .detail-row strong {
+        text-align: left;
+    }
+}

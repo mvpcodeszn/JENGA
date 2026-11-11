@@ -1,0 +1,620 @@
+/* =========================
+   BUSINESS PAGE
+========================= */
+
+.business-page {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 50px;
+}
+
+
+.back-business {
+    display: inline-block;
+
+    font-size: 12px;
+
+    color: #777777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.business-hero {
+    background: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.business-cover-large {
+    height: 350px;
+
+    padding: 40px;
+
+    background: #111111;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+}
+
+
+.business-cover-large span {
+    color: #9db890;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+}
+
+
+.business-cover-large h1 {
+    font-size: clamp(70px, 10vw, 130px);
+
+    line-height: 0.8;
+
+    letter-spacing: -7px;
+
+    margin-top: 15px;
+}
+
+
+.business-intro {
+    padding: 30px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.company-logo {
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 15px;
+
+    background: #dfe7d9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: 900;
+}
+
+
+.business-intro h2 {
+    font-size: 28px;
+
+    letter-spacing: -1px;
+}
+
+
+.business-intro p {
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+.business-actions {
+    padding: 0 40px 35px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.interest-btn,
+.message-btn {
+    border-radius: 30px;
+
+    padding: 13px 22px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.interest-btn {
+    background: #111111;
+
+    color: white;
+
+    border: 1px solid #111111;
+}
+
+
+.message-btn {
+    background: white;
+
+    color: #111111;
+
+    border: 1px solid #dddddd;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.business-tabs {
+    display: flex;
+
+    gap: 35px;
+
+    border-bottom: 1px solid #dddddd;
+
+    margin: 40px 0;
+}
+
+
+.business-tabs a {
+    padding-bottom: 15px;
+
+    font-size: 12px;
+
+    color: #777777;
+}
+
+
+.business-tabs a.active {
+    color: #111111;
+
+    border-bottom: 2px solid #111111;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.business-layout {
+    display: grid;
+
+    grid-template-columns: minmax(400px, 1fr) 300px;
+
+    gap: 50px;
+}
+
+
+.business-main {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 70px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.business-section-content h2 {
+    max-width: 700px;
+
+    font-size: 45px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+}
+
+
+.business-section-content > p:not(.eyebrow) {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   PITCH
+========================= */
+
+.pitch-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+
+.pitch-header h2 {
+    font-size: 35px;
+
+    letter-spacing: -1px;
+}
+
+
+.pitch-header > span {
+    font-size: 12px;
+
+    color: #888888;
+}
+
+
+.large-pitch {
+    height: 350px;
+
+    border-radius: 18px;
+
+    background: #dfe7d9;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.large-play {
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: #111111;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.large-pitch p {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   UPDATE
+========================= */
+
+.update-card {
+    background: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 15px;
+
+    padding: 30px;
+}
+
+
+.update-card > span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #6c8f5d;
+
+    font-weight: 700;
+}
+
+
+.update-card h3 {
+    font-size: 28px;
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+}
+
+
+.update-card p {
+    color: #666666;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SIDEBAR CARDS
+========================= */
+
+.business-sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.side-card {
+    background: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 15px;
+
+    padding: 25px;
+}
+
+
+.founder {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 20px 0;
+}
+
+
+.founder-avatar {
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #ded7e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.founder strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+
+.founder span {
+    display: block;
+
+    font-size: 10px;
+
+    color: #888888;
+}
+
+
+.side-card > a {
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.detail {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.detail:last-child {
+    border-bottom: none;
+}
+
+
+.detail span {
+    font-size: 10px;
+
+    color: #888888;
+}
+
+
+.detail strong {
+    font-size: 11px;
+}
+
+
+/* =========================
+   INVESTMENT
+========================= */
+
+.investment-card {
+    background: #111111;
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+}
+
+
+.investment-card > p {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #9db890;
+}
+
+
+.investment-card h3 {
+    font-size: 30px;
+
+    line-height: 1;
+
+    margin: 20px 0;
+}
+
+
+.investment-card > span {
+    display: block;
+
+    color: #999999;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+.investment-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #111111;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .business-page {
+        padding: 40px 25px;
+    }
+
+    .business-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .business-sidebar {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .investment-card {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .business-page {
+        padding: 30px 15px;
+    }
+
+    .business-cover-large {
+        height: 280px;
+
+        padding: 30px;
+    }
+
+    .business-cover-large h1 {
+        font-size: 70px;
+    }
+
+    .business-intro {
+        padding: 25px;
+    }
+
+    .business-actions {
+        padding: 0 25px 25px;
+
+        flex-direction: column;
+    }
+
+    .business-tabs {
+        gap: 20px;
+
+        overflow-x: auto;
+    }
+
+    .business-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .business-sidebar {
+        display: flex;
+    }
+
+    .business-section-content h2 {
+        font-size: 35px;
+    }
+
+}

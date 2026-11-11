@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | JENGA</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <!-- LEFT BRANDING SECTION -->
+    <section class="auth-brand">
+        <a href="index.html" class="logo">JENGA<span>.</span></a>
+
+        <div class="brand-content">
+            <h1>Build something<br>that matters.</h1>
+
+            <p>
+                Join a community of African founders, investors,
+                and innovators building the future together.
+            </p>
+        </div>
+
+        <div class="brand-footer">
+            © 2026 JENGA. Building Africa's future together.
+        </div>
+    </section>
+
+    <!-- RIGHT REGISTRATION SECTION -->
+    <section class="auth-form-section">
+
+        <div class="auth-form-wrapper">
+
+            <a href="index.html" class="back-link">← Back to home</a>
+
+            <h2>Create your account</h2>
+
+            <p class="form-subtitle">
+                Start building meaningful connections on Jenga.
+            </p>
+
+            <form action="complete-profile.html" method="GET">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to Jenga's Terms of Service and Privacy Policy.
+                    </label>
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    Create Account →
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Log in</a>
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
